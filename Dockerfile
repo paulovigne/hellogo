@@ -1,4 +1,4 @@
-FROM bitnami/golang:1.16 as builder-goapp
+FROM golang:1.16 as builder-goapp
 RUN mkdir /build
 ADD ./server.go /build/
 WORKDIR /build
